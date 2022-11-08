@@ -70,11 +70,13 @@ mute=document.querySelector('#mute');
 mute.addEventListener("click",function(){
 	if(video.muted == false){
 		video.muted = true;
+		mute.innerHTML = "Unmute";
 		console.log("Mute");
 	}
 	else{
 		video.muted = false;
 		console.log("Unmute");
+		mute.innerHTML = "Mute";
 	}
 })
 
